@@ -33,7 +33,24 @@ namespace LuckyNumbers
                 guessNumbers[i] = guess;
             }
 
-            
+            //Part 2
+            Random randomNumbers = new Random();
+            int[] luckyNumbers = new int[6];
+            int lucky;
+            for (int i = 0; i < 6; i++)
+            {   
+                lucky = randomNumbers.Next(lowerBound, upperBound + 1);
+                luckyNumbers[i] = lucky;
+            }
+            Console.WriteLine("Lucky Number: " + luckyNumbers[0]);
+            Console.WriteLine("Lucky Number: " + luckyNumbers[1]);
+            Console.WriteLine("Lucky Number: " + luckyNumbers[2]);
+            Console.WriteLine("Lucky Number: " + luckyNumbers[3]);
+            Console.WriteLine("Lucky Number: " + luckyNumbers[4]);
+            Console.WriteLine("Lucky Number: " + luckyNumbers[5]);
+
+            //Part 3
+            Console.WriteLine();
 
         }
     }
