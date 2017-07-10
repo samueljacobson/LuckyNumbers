@@ -47,7 +47,7 @@ namespace LuckyNumbers
                 }
 
                 //Part 3 - compare user input to random numbers and determine corresponding payout
-                int correctGuesses = 0;                 //this method does not seem to calculating the correct number of matches
+                int correctGuesses = 0;                 //this method does not seem to calculate the correct number of matches
                 foreach (int guesses in guessNumbers)
                 {
                     if (guesses == luckyNumbers[0])
